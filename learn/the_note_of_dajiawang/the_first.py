@@ -35,7 +35,13 @@ if __name__ == "__main__":
     print result
     result = qiuyu(a,b)
     print result
-
+abs()
+cmath.sqrt()
+float()
+int()
+long()
+imput()
+raw_input()
 
 #got the user's input
 #num = input("please input a number\n")
