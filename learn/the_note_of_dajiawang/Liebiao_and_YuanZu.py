@@ -115,3 +115,24 @@ print tag4
 tag4.reverse()
 print tag4
 
+#sort and sorted
+tag6 = tag4[:]
+print tag6
+tag6.sort()
+print tag6
+
+#sorted 已经排好序
+tag3.reverse()
+tag7 = sorted(tag3)
+print tag7
+print tag3
+print "*"*20
+#cmp
+cmp(21,20)
+tag7.sort(cmp)
+print tag7 ,"tag7 cmp"
+
+#tuple 将序列转化为元组。
+
+a = tuple(tag3)
+print a
