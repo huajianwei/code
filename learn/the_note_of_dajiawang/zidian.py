@@ -14,3 +14,9 @@ TheResult = dict(item)
 print TheResult
 
 #通过关键字来建立字典。
+d = dict(name="jake",age=23)
+print d
+
+#字典的基本的操作
+print len(d)
+item["jake"]
