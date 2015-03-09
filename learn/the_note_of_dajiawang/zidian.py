@@ -13,7 +13,7 @@ item = zip(name,age)
 TheResult = dict(item)
 print TheResult
 
-#通过关键字来建立字典。
+#通过关键字来建立字典。dict 的key 是不可变对象，不能使用list作为key值
 d = dict(name="jake",age=23)
 print d
 
@@ -51,4 +51,20 @@ d.pop("weight")
 print d
 d["weight"] = 34
 
+# set 和dict类似 是一组key的组合，没有value。
+#初始化
+s = set([1, 2, 3])
+print s
+#重复的元素在set中被过滤掉，，相当于是dict的key。
+
+#添加元素
+s.add(4)  #只可以添加一个值
+print s
+
+#删除元素
+
+s.remove(3)
+print s
+
+#set类型可以做集合的交，& 并 |
 
