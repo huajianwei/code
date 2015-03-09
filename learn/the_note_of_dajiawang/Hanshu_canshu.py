@@ -36,9 +36,15 @@ print powern_while(3,1)
 print powern_while(3,2)
 print powern_while(4,2)
 
+#可变参数，参数是可以修改的
+#sum = 1*1+2*2+3*3++++
+def calc(*numbers):
+    sum = 0
+    for n in numbers:
+        sum = sum + n * n
+    return sum
 
-
-
+print calc(1,2,13)
 
 
 
