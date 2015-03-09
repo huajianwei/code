@@ -19,4 +19,30 @@ print d
 
 #字典的基本的操作
 print len(d)
-item["jake"]
+print d["name"]
+print d["age"]
+
+#新加一些key和value
+d["heigh"]=178
+print d
+
+#更新原有key的value
+d["heigh"] = 168
+print d["heigh"]
+
+#对于key的值不存在的情况，使用 in 会报错。
+#可是使用key值的name来判断该key是否在字典中
+#也可以使用dict提供的get方法来判断。推荐使用。
+if "weight" in d:
+    print d["weight"]
+else:
+    print "the key is not in dict"
+
+d.get("weight")
+
+a = d.get("weight","你要查找的key值不存在")
+#print d.get("weight")
+print a
+
+
+
