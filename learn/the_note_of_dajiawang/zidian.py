@@ -44,5 +44,11 @@ a = d.get("weight","你要查找的key值不存在")
 #print d.get("weight")
 print a
 
+#删除一个key值
+d["weight"] = 34
+print d
+d.pop("weight")
+print d
+d["weight"] = 34
 
 
