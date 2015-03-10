@@ -27,4 +27,16 @@ print [d for d in os.listdir('.')]
 
 # for循环其实可以同时使用两个甚至多个变量
 
+d = {'x': 'A', 'y': 'B', 'z': 'C' }
+for k, v in d.iteritems():
+	print k, '=', v
+
+
+L = ['Hello', 'World', 'IBM', 'Apple']
+ll = [s.lower() for s in L]
+lll = [s.capitalize() for s in ll]
+print ll
+print lll
+
+
 
