@@ -1,16 +1,24 @@
 __author__ = 'huajw'
 #coding=utf-8
 
-a = [x for x in range(1,10)]
-print type(a[0])
-b = [x for x in range(-10,-1)]
-print type(b[0])
-
-#c = map(abs,b)
-c = map(lambda x, y : x * y , a, b)
-
-print "c = " ,c
-
-print map(lambda x, y: x + y, [1, 3, 5, 7, 9], [-2, 4, 6, 8, 10])
+#!/usr/bin/env python
+import subprocess
+import threading
+def ping(num):
+        for b in range(1,256):
+                if subprocess.call('ping -c1 -W 1 192.168.%s.%s > /dev/null' %(num,b)) == 0:
+                        print '192.168.%s.%s is up'%(num,b)
+                else:
+                        print '192.168.%s.%s is down'%(num,b)
 
 
+
+threads =[]
+t=threading.Thread(target=ping,args=(16))
+threads.append(t)
+
+if __name__ == '__main__':
+    for t in threads:
+        t.setDaemon(True)
+        t.start()
+    t.join()

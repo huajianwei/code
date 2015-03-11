@@ -84,8 +84,8 @@ def issushu(x):
 #            print x
             return x
 
-for x in range(2,100):
-    issushu(x)
+#for x in range(2,100):
+#    issushu(x)
 
 
 b = filter(issushu , [x for x in range(1,100)]  )
