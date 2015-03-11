@@ -49,4 +49,3 @@ def move(x, y, step, angle=0):
 
 x, y = move(100, 100, 60, math.pi / 6)
 print x,y
-

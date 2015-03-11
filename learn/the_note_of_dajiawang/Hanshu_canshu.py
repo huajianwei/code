@@ -43,7 +43,7 @@ def calc(*numbers):
     for n in numbers:
         sum = sum + n * n
     return sum
-print "*"*200
+print "*"*20
 print calc(1,2,4,7,9,20)
 
 a=(1,2,3,4,5,6,7,8,9,10,12,13,11)
