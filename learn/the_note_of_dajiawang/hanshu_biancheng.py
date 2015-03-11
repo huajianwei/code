@@ -90,3 +90,4 @@ def issushu(x):
 
 b = filter(issushu , [x for x in range(1,100)]  )
 print b
+
