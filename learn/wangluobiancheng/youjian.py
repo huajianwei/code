@@ -7,13 +7,9 @@ from email import encoders
 from email.header import Header
 from email.utils import parseaddr, formataddr
 
-
-
-
 def _format_addr(s):
     name, addr = parseaddr(s)
     return formataddr(( Header(name, 'utf-8').encode(),addr.encode('utf-8') if isinstance(addr, unicode) else addr))
-
 
 #msg = MIMEText('hello,\t can you see the text? ', 'plain', 'utf-8')
 msg = MIMEText('确实是的,我就是这么屌,你怎么滴, 这个一个自动发送的邮件,请不要回复,你回复我也不看,,,send by 滑建威 这句话是测试用的', 'plain', 'utf-8')
@@ -29,7 +25,7 @@ password = '123321'
 # 输入SMTP服务器地址:
 smtp_server = 'smtp.yeah.net'
 # 输入收件人地址:
-to_addr = '503906670@qq.com'
+to_addr = '846022226@qq.com'
 
 
 server = smtplib.SMTP(smtp_server, 25) # SMTP协议默认端口是25
