@@ -77,4 +77,6 @@ runtwice(lei)
 # 基本类型,变量指向类或者函数,可以使用type().
 #
 #Python把每种type类型都定义好了常量，放在types模块里，使用之前，需要先导入：
-
+#能用type()判断的基本类型也可以用isinstance()判断：
+#并且还可以判断一个变量是否是某些类型中的一种，比如下面的代码就可以判断是否是str或者unicode：
+#isinstance('a', (str, unicode))
