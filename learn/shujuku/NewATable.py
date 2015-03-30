@@ -11,6 +11,4 @@ print  cursor.rowcount
 cursor.close()
 conn.commit()
 #cursor.close()
-
-
 print  cursor.rowcount
