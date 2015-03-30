@@ -25,7 +25,7 @@ password = '123321'
 # 输入SMTP服务器地址:
 smtp_server = 'smtp.yeah.net'
 # 输入收件人地址:
-to_addr = '846022226@qq.com'
+to_addr = '2423076451@qq.com'
 
 
 server = smtplib.SMTP(smtp_server, 25) # SMTP协议默认端口是25
