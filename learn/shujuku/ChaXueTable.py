@@ -15,7 +15,11 @@ cursor = conn.cursor()
 
 #如果SQL语句带有参数，那么需要把参数按照位置传递给execute()方法，
 # 有几个?占位符就必须对应几个参数
-cursor.execute('select * from user where id=?',"1" )
+result = cursor.execute('select * from user where id=?',"4" )
+
+print result
+
+#print str(result[1]).encode("utf-8")
 
 values = cursor.fetchall()
 conn.close()
