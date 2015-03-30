@@ -1,6 +1,8 @@
 __author__ = 'huajw'
 #coding=utf-8
 
+#使用网易邮箱进行发送电子邮件
+
 import smtplib
 from email.mime.text import MIMEText
 from email import encoders
