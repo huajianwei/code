@@ -1,0 +1,16 @@
+__author__ = 'huajw'
+#coding=utf-8
+#测试数据库
+import sqlite3
+conn = sqlite3.connect("test.db")
+cursor = conn.cursor()
+#cursor.execute('create table user (id varchar(20) primary key, name varchar(20))')
+cursor.execute('insert into user (id, name) values (\'1\', \'Michael\')')
+cursor.execute('insert into user (id, name) values (\'2\', \'jack\')')
+print  cursor.rowcount
+cursor.close()
+conn.commit()
+#cursor.close()
+
+
+print  cursor.rowcount
